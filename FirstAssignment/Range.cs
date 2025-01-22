@@ -9,7 +9,7 @@ namespace FirstAssignment
     public class Range<T> where T : IComparable<T>
     {
 
-
+          
         #region Properties
         public T Minimum { get; private set; }
         public T Maximum { get; private set; }
