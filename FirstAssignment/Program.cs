@@ -36,26 +36,34 @@ namespace FirstAssignment
 
             */
             #endregion
-            #region 2-The Bubble Sort algorithm has a time complexity of O(n^2) in its worst and average cases, which makes it inefficient for large datasets. How we can optimize the Bubble Sort algorithm  And implement the code of this optimized bubble sort algorithm
             
+            
+            #region 2-Create a generic class named Range<T> where T represents the type of values.
+            try
+            {
+
+                Range<int> intRange = new Range<int>(10, 20);
+                Console.WriteLine($"Is 15 in range: {intRange.IsInRange(15)}"); 
+                Console.WriteLine($"Is 25 in range: {intRange.IsInRange(25)}"); 
+                Console.WriteLine($"Length of range: {intRange.Length()}"); 
+
+                Range<double> doubleRange = new Range<double>(5.5, 10.5);
+                Console.WriteLine($"Is 7.5 in range: {doubleRange.IsInRange(7.5)}"); 
+                Console.WriteLine($"Length of range: {doubleRange.Length()}"); 
+
+                // Range<string> stringRange = new Range<string>("a", "z");
+                // Console.WriteLine(stringRange.Length());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+            }
 
 
             #endregion
-            #region 3-The Bubble Sort algorithm has a time complexity of O(n^2) in its worst and average cases, which makes it inefficient for large datasets. How we can optimize the Bubble Sort algorithm  And implement the code of this optimized bubble sort algorithm
 
 
 
-            #endregion
-            #region 4-The Bubble Sort algorithm has a time complexity of O(n^2) in its worst and average cases, which makes it inefficient for large datasets. How we can optimize the Bubble Sort algorithm  And implement the code of this optimized bubble sort algorithm
-
-
-
-            #endregion
-            #region 5-The Bubble Sort algorithm has a time complexity of O(n^2) in its worst and average cases, which makes it inefficient for large datasets. How we can optimize the Bubble Sort algorithm  And implement the code of this optimized bubble sort algorithm
-
-
-
-            #endregion
         }
     }
 }
